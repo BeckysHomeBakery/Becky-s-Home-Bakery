@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Becky’s Home Oven • Killeen, Texas</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    .hero-bg { background-image: url('https://picsum.photos/id/1015/2000/1200'); background-size: cover; background-position: center; }
+    .card-hover { transition: all 0.3s; }
+    .card-hover:hover { transform: scale(1.05); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1); }
+  </style>
+</head>
+<body class="bg-amber-50 font-sans">
+  <!-- NAV -->
+  <nav class="bg-amber-900 text-amber-100 sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
+      <div class="flex items-center gap-3">
+        <i class="fa-solid fa-bread-slice text-3xl"></i>
+        <h1 class="text-3xl font-bold tracking-tight">Becky’s Home Oven</h1>
+      </div>
+      <div class="flex gap-8 text-lg">
+        <a href="#home" class="hover:text-amber-300">Home</a>
+        <a href="#about" class="hover:text-amber-300">About</a>
+        <a href="#recipes" class="hover:text-amber-300">Recipes</a>
+        <a href="#shop" class="hover:text-amber-300">Shop</a>
+        <a href="#contact" class="hover:text-amber-300">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="home" class="hero-bg h-screen flex items-center text-white relative">
+    <div class="absolute inset-0 bg-black/40"></div>
+    <div class="max-w-4xl mx-auto text-center px-6 relative z-10">
+      <h2 class="text-7xl font-bold mb-6 tracking-tight">Warm bakes from my Killeen kitchen</h2>
+      <p class="text-3xl mb-10">Fresh cookies, sourdough, Texas sheet cake & more — straight from my home oven to your table</p>
+      <a href="#shop" class="inline-block bg-amber-500 hover:bg-amber-600 px-12 py-5 rounded-full text-2xl font-semibold transition">Shop Now</a>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <img src="https://picsum.photos/id/64/800/600" alt="Becky baking" class="rounded-3xl shadow-2xl">
+      </div>
+      <div>
+        <h2 class="text-5xl font-bold text-amber-900 mb-8">Hi, I’m Becky!</h2>
+        <p class="text-xl leading-relaxed text-amber-800">Welcome to my little home oven in Killeen, Texas. I bake everything with love using fresh, simple ingredients — just like my grandma taught me. Whether you need cookies for a party, a loaf of sourdough for the weekend, or a custom Texas sheet cake, I’ve got you covered. Local pickup only for now — come say hi!</p>
+        <div class="mt-10 text-sm text-amber-700">
+          Proudly operating under Texas Cottage Food Laws • Local Killeen pickup available
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RECIPES -->
+  <section id="recipes" class="py-20 bg-amber-100">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-5xl font-bold text-center text-amber-900 mb-12">Popular Recipes</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white rounded-3xl overflow-hidden card-hover">
+          <img src="https://picsum.photos/id/29/600/400" class="w-full h-64 object-cover">
+          <div class="p-6">
+            <h3 class="text-2xl font-semibold mb-2">Classic Chocolate Chip Cookies</h3>
+            <p class="text-amber-700">Soft centers, crispy edges — my most-requested recipe!</p>
+            <button onclick="alert('Recipe PDF would open here!')" class="mt-6 w-full bg-amber-900 text-white py-3 rounded-2xl">Get Recipe →</button>
+          </div>
+        </div>
+        <div class="bg-white rounded-3xl overflow-hidden card-hover">
+          <img src="https://picsum.photos/id/201/600/400" class="w-full h-64 object-cover">
+          <div class="p-6">
+            <h3 class="text-2xl font-semibold mb-2">No-Knead Sourdough</h3>
+            <p class="text-amber-700">Crusty outside, airy inside. Starter included in notes!</p>
+            <button onclick="alert('Recipe PDF would open here!')" class="mt-6 w-full bg-amber-900 text-white py-3 rounded-2xl">Get Recipe →</button>
+          </div>
+        </div>
+        <div class="bg-white rounded-3xl overflow-hidden card-hover">
+          <img src="https://picsum.photos/id/29/600/400" class="w-full h-64 object-cover">
+          <div class="p-6">
+            <h3 class="text-2xl font-semibold mb-2">Texas Sheet Cake</h3>
+            <p class="text-amber-700">Rich chocolate, pecans on top — a Lone Star classic.</p>
+            <button onclick="alert('Recipe PDF would open here!')" class="mt-6 w-full bg-amber-900 text-white py-3 rounded-2xl">Get Recipe →</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SHOP -->
+  <section id="shop" class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-5xl font-bold text-center text-amber-900 mb-12">Fresh from the Oven – Order Today</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Product 1 -->
+        <div class="bg-amber-50 rounded-3xl p-8 text-center card-hover">
+          <img src="https://picsum.photos/id/29/400/300" class="mx-auto rounded-2xl mb-6">
+          <h3 class="text-2xl font-semibold">Chocolate Chip Cookies</h3>
+          <p class="text-amber-600">Dozen • Fresh daily</p>
+          <p class="text-4xl font-bold text-amber-900 my-4">$12</p>
+          <button onclick="addToCart(12)" class="w-full bg-amber-900 text-white py-4 rounded-2xl text-lg">Add to Cart</button>
+        </div>
+        <!-- Product 2 -->
+        <div class="bg-amber-50 rounded-3xl p-8 text-center card-hover">
+          <img src="https://picsum.photos/id/201/400/300" class="mx-auto rounded-2xl mb-6">
+          <h3 class="text-2xl font-semibold">Sourdough Loaf</h3>
+          <p class="text-amber-600">Large • 2-day notice</p>
+          <p class="text-4xl font-bold text-amber-900 my-4">$8</p>
+          <button onclick="addToCart(8)" class="w-full bg-amber-900 text-white py-4 rounded-2xl text-lg">Add to Cart</button>
+        </div>
+        <!-- Product 3 -->
+        <div class="bg-amber-50 rounded-3xl p-8 text-center card-hover">
+          <img src="https://picsum.photos/id/29/400/300" class="mx-auto rounded-2xl mb-6">
+          <h3 class="text-2xl font-semibold">Texas Sheet Cake</h3>
+          <p class="text-amber-600">Half-sheet • Serves 12</p>
+          <p class="text-4xl font-bold text-amber-900 my-4">$25</p>
+          <button onclick="addToCart(25)" class="w-full bg-amber-900 text-white py-4 rounded-2xl text-lg">Add to Cart</button>
+        </div>
+      </div>
+      <p class="text-center text-amber-600 mt-8">Local Killeen pickup only • Message me for custom orders!</p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-20 bg-amber-900 text-white">
+    <div class="max-w-2xl mx-auto px-6 text-center">
+      <h2 class="text-5xl font-bold mb-8">Let’s Bake Something Together</h2>
+      <form onsubmit="event.preventDefault(); alert('Thank you! I’ll reply within 24 hours 😊');" class="space-y-6">
+        <input type="text" placeholder="Your name" class="w-full px-6 py-4 rounded-2xl bg-amber-800 text-white" required>
+        <input type="email" placeholder="Email" class="w-full px-6 py-4 rounded-2xl bg-amber-800 text-white" required>
+        <textarea placeholder="What would you like to order?" rows="5" class="w-full px-6 py-4 rounded-2xl bg-amber-800 text-white" required></textarea>
+        <button type="submit" class="w-full bg-amber-500 hover:bg-amber-400 py-5 rounded-2xl text-2xl font-semibold">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-amber-950 text-amber-400 py-12 text-center text-sm">
+    <p>© 2026 Becky’s Home Oven • Killeen, Texas</p>
+    <p class="mt-2">All baked goods made in my home kitchen under Texas Cottage Food Laws. Local pickup only.</p>
+    <p class="mt-6">Made with ❤️ by Grok for Becky</p>
+  </footer>
+
+  <script>
+    function addToCart(price) {
+      alert(`Added to cart! $${price} (demo only — real orders via message form)`);
+    }
+    // Tailwind script already loaded
+  </script>
+</body>
+</html>
